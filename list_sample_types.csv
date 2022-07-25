@@ -1,0 +1,141 @@
+Sample type,Action / Rename to (X = remove),Comment
+14C AMS dating,,
+Acoustics recorder,,
+AADI,,
+ADCP,,For ADCP mounted on mooring (mooring is parent)
+aDNA,,Ancient DNA
+Algae aggregates,,
+AT/DIC/pH,,
+Bacterial production,, Set intendedMethod to for instance 3H-Leucine
+Bio bulk,,Ice cores for biological processing
+Biogenic silica,,
+Brine,,Brine type Ice-cores
+CDOM,, Colored dissolved organic matter
+Chlorophyll a > 10 um,,For use on sediment traps
+Chlorophyll a tot,,
+CTD,,For CTDs attached to moorings
+d13C DIC,,These are not taken for primary production
+d13C,,
+d18O,,
+Data: no physical sample,,To be used when no physical sample is taken and no other option is available in this list.
+dCSP,,dissolved Coomassie stainable particles
+dD and d18O,, Samples taken for both dD and d18O
+Dilution culture,,
+Dinocysts,,Recorded from Paleo cores
+Dissolved Organic Carbon,,
+Dissolved trace elements,,
+Dive,,to be used when dives are done during sea ice work.
+DNA,,
+DO,, dissolved oxygen
+dTEP,,dissolved Transparent exopolymeric particles
+Ecotoxicology,,
+eDNA,,environmental DNA
+Electron microscopy (SEM filter),,
+Experiments,,For instance water samples to be used in experiments. IntendedMethod should be set
+Fatty acids,,
+Fecal pellet flux,, Taken from sediment traps
+Fecal pellets,,
+Female:egg ratio,,New
+FDOM,,Flourescent dissolved organic matter
+FlowCam,,automated particle characterization flow imaging microscopy and speed particle analysis
+Fish,,
+FISH-EPS,,Fluorescent in situ hybridization EPS is exopolymeric substances
+FISH-Mixotrophy,,
+GC catcher sample,, Gravity core
+GC cutter sample,, Gravity core
+GC section archive half,, Gravity core
+GC section working half,, Gravity core
+GC section,, Gravity core
+Gel trap,, Gel collecting particles from short time sediment trap
+Gelatinous zooplankton taxonomy,,New
+Gelatinous zooplankton volume,,New
+Grain size,, Sediment grain size
+Highly branched isoprenoids (HBI),,
+HPLC Pigments,,
+Ice algae,,
+Ice core,, Needed to link sections to one common ice core
+ICP,,
+iDNA,, intestinal DNA
+IP25,,Ice algal biomarker
+Isotopes,, Carbon and nitrogen stable isotopes
+ISUS,,
+HBI,,
+L-ADCP,,For where L-ADCP is together with CTD therefore it's child
+Macrofauna taxonomy,,
+Macrozooplankton biomass,,
+Macrozooplankton diet,,New
+Macrozooplankton metagenomics,,
+Macrozooplankton taxonomy,,
+Megafauna taxonomy,,
+Meiofauna abundance,, 
+Meiofauna taxonomy,, 
+Melt pond,,Used to join multiple samples from one melt pond
+Meroplankton taxonomy,,
+Mesozooplankton taxonomy,,
+Mesozooplankton biomass,,
+Mesozooplankton diet,,New
+Mesozooplankton ecotoxicology,,
+Mesozooplankton metagenomics,,
+Mesozooplankton taxonomy,,
+Methylmercury,, remarks can for instance be PET or PC Bottle
+Microalgal diversity,, intendedMethod could be Culturing
+Microbial abundance,,
+Microbial activity (RNA) ,,
+Microbial diversity (DNA and RNA),,
+Microzooplankton biomass,,
+Microzooplankton abundance,,
+Mixotrophy FISH,,Fluorescence in situ hybridization of mixotrophy samples
+Multicore archive half,, Half a multicore
+Multicore work half,, Half a multicore
+Multicore,, One core from a multicore (i.e. a sample)
+Niskin Bottle,, One bottle from a set of bottles 
+Nutrients,,"Nitrate, nitrite,phosphate and silicic acid"
+Organic matter characterization,,Samples taken from Niskin
+Particulate absorption,,
+Particulate elements,, Needed to differentiate from trace
+PC section,,Piston core section
+pCSP,,particulate Coomassie stainable particles
+Photography,,
+Plankton barcoding,,
+Plankton metabarcoding,,
+POC/PON,,
+Primary production (14C-CO2),,
+Profile,, Drone
+Protist abundance and taxonomy,, Method is for instance microscopy
+Protist diversity <10 um,,intendedMethod could be Microscopy
+Protist diversity >10 um,,intendedMethod could be Microscopy
+pTEP,,particulate Transparent exopolymeric particles
+Racetrack,, Drone
+RNA,,
+Sediment trap,,
+Sediment incubation,S Missing samplingProtocol,"Sample type (?) instead of ""material"""
+Sediment pigments,,
+Sediment porosity,,
+Sediment slice,, Part of a sediment core used for further splitting
+Seston elemental composition,, Method can be XRF
+Single cell isolate,,
+Site coordinates,,
+Small meiofauna abundance,,New
+Small meiofauna diet,,New
+Small meiofauna taxonomy,,New
+Small mesozooplankton biomass,,New
+Small mesozooplankton diet,,New
+Small mesozooplankton metagenomics,,New
+Small mesozooplankton taxonomy,,
+Snow,,New
+Stable isotopes,,
+Station,,Needed for defining specific stations (NLEG01….)
+Temperature logger,,attached to moorings
+Temperature and pressure logger,,
+Tissue,, Specify type in tissueType
+Total Mercury,, Remarks can be Glass vial
+Total nitrogen,,
+Total organic carbon,,
+Total thickness ice+snow,,
+Trace elements,,sampling with GO-FLO in a clean lab
+Under ice water,,
+Video,,
+Viral decay,,
+Viral diversity (FeCl3),,
+Viral production,,
+Water,,
