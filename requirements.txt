@@ -1,2 +1,6 @@
 xlsxwriter
 requests
+numpy
+datetime
+pandas
+os
