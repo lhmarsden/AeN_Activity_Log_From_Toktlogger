@@ -1,6 +1,5 @@
 xlsxwriter
 requests
-numpy
+numpy>=1.21.5
 datetime
 pandas
-os
