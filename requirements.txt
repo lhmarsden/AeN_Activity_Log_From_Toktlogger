@@ -1,7 +1,2 @@
 xlsxwriter
 requests
-json
-numpy
-datetime
-pandas
-os
