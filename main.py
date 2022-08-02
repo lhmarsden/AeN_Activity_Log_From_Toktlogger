@@ -28,7 +28,7 @@ while os.path.exists(f"{filename}_{i}.xlsx"):
 
 path = f"{filename}_{i}.xlsx"
 
-toktlogger = '172.16.1.39' # My laptop VM toktlogger
+toktlogger = 'toktlogger-bonnevie.hi.no' # My laptop VM toktlogger
 
 print('\nPulling data from toktlogger')
 data = tl.json_to_df(toktlogger)
