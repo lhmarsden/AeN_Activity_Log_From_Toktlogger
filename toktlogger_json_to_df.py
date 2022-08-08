@@ -107,15 +107,15 @@ def json_to_df(toktlogger):
             for key, val in key_map.items():
 
                 if key in ['eventDate', 'end_date', 'start_date']:
-                    dic[key] = dt.strptime(activity[val], '%Y-%m-%dT%H:%M:%S.%fZ').date()
+                    dic[key] = [dt.strptime(activity[val], '%Y-%m-%dT%H:%M:%S.%fZ').date()]
                 elif key in ['eventTime', 'end_time', 'start_time']:
-                    dic[key] = dt.strptime(activity[val], '%Y-%m-%dT%H:%M:%S.%fZ').time()
+                    dic[key] = [dt.strptime(activity[val], '%Y-%m-%dT%H:%M:%S.%fZ').time()]
 
                 elif key in ['decimalLatitude','endDecimalLatitude']:
-                    dic[key] = activity[val][1]
+                    dic[key] = [activity[val][1]]
 
                 elif key in ['decimalLongitude','endDecimalLongitude']:
-                    dic[key] = activity[val][0]
+                    dic[key] = [activity[val][0]]
 
                 elif key in ['bottomDepthInMeters']:
 
@@ -141,34 +141,36 @@ def json_to_df(toktlogger):
                         bd = []
                         for i, t in enumerate(json_bd):
                             bd.append(t['numericValue'])
-                        dic[key] = np.median([bd])
+                        dic[key] = [np.median([bd])]
                     else:
-                        dic[key] = ''
+                        dic[key] = ['']
 
                 elif key == 'stationName':
                     numFields = len(activity['fields'])
                     for fld in range(numFields):
                         if "station" in activity['fields'][fld]['name'].lower():
-                            dic[key] = activity['fields'][fld]['value']
+                            dic[key] = [activity['fields'][fld]['value']]
                         else:
-                            dic[key] = ''
+                            dic[key] = ['']
                     if numFields == 0:
-                        dic[key] = ''
+                        dic[key] = ['']
 
                 # Getting gear type from IMR activities list if possible by using the mapping in the list_gear_types.csv file
                 elif key == 'gearType':
                     if activity['activityTypeName'] in gear_df['IMR name'].values:
-                        dic[key] = gear_df.loc[gear_df['IMR name'] == activity['activityTypeName'], 'Gear type'].item()
+                        dic[key] = [gear_df.loc[gear_df['IMR name'] == activity['activityTypeName'], 'Gear type'].item()]
                     else:
-                        dic[key] = ''
+                        dic[key] = ['']
 
                 elif val == '':
-                    dic[key] = ''
+                    dic[key] = ['']
 
                 else:
-                    dic[key] = activity[val]
+                    dic[key] = [activity[val]]
 
-            data = data.append(dic, ignore_index=True)
+            new_activity = pd.DataFrame.from_dict(dic)
+            print(new_activity)
+            data = pd.concat([data, new_activity], ignore_index=True)
 
     return data
 
